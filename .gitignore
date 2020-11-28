@@ -1,0 +1,18 @@
+# ignore files
+**/.DS_Store
+*.iml
+**/derby.log
+.classpath
+.project
+
+# ignore folders
+.idea
+target
+.settings/
+/deploy_all.sh
+/deploy.sh
+
+stop\.sh
+
+\.metadata/
+beckcal_db_data/

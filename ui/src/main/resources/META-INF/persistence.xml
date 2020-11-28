@@ -1,0 +1,15 @@
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.2"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+    <!-- Define persistence unit -->
+    <persistence-unit name="car">
+        <jta-data-source>jdbc/car</jta-data-source>
+        <class>net.cyberspirit.car.entity.Car</class>
+
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <properties>
+            <property name="javax.persistence.logging.level" value="DEBUG"/>
+        </properties>
+    </persistence-unit>
+</persistence>
